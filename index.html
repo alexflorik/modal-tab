@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tab and modal example</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="site-content">
+		<div class="btn-container">
+			<a class="btn" data-modal="#m1">Open modal window 1</a>
+			<a class="btn" data-modal="#m2">Open modal window 2</a>
+		</div>
+		<div class="tab-container">
+			<div class="tab-list">
+				<a data-tab="#t1" class="tab active">Tab 1</a>
+				<a data-tab="#t2" class="tab">Tab 2</a>
+				<a data-tab="#t3" class="tab">Tab 3</a>
+				<a data-tab="#t4" class="tab">Tab 4</a>
+				<a data-tab="#t5" class="tab">Tab 5</a>
+			</div>
+			<div class="tab-content">
+				<div id="t1" class="content active">
+					1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quasi dolorem, quam fugit iste ad consequuntur aperiam animi tempore adipisci officiis, magnam vero atque voluptate. Dolorem voluptate pariatur, non natus.
+				</div>
+				<div id="t2" class="content">
+					2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quasi dolorem, quam fugit iste ad consequuntur aperiam animi tempore adipisci officiis, magnam vero atque voluptate. Dolorem voluptate pariatur, non natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis soluta, porro placeat facilis ducimus optio maiores mollitia corporis amet consequuntur id vel quidem, tenetur quae! Consequatur, ipsum! Qui, laboriosam tenetur.
+				</div>
+				<div id="t3" class="content">
+					3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quasi dolorem, quam fugit iste ad consequuntur aperiam animi tempore adipisci officiis, magnam vero atque voluptate. Dolorem voluptate pariatur, non natus. lorem
+				</div>
+				<div id="t4" class="content">
+					4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quasi dolorem, quam fugit iste ad consequuntur aperiam animi tempore adipisci officiis, magnam vero atque voluptate. Dolorem voluptate pariatur, non natus.
+				</div>
+				<div id="t5" class="content">
+					5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quasi dolorem, quam fugit iste ad consequuntur aperiam animi tempore adipisci officiis, magnam vero atque voluptate. Dolorem voluptate pariatur, non natus.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam soluta amet sed consequuntur qui, doloribus recusandae, eum veritatis iste, accusamus a ipsum facere eos quidem voluptatem reiciendis ex tempore. Eveniet!</div>
+
+	<div class="modal-container">
+		<div id="m1" class="modal">
+			<p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt beatae voluptatem facere, voluptate voluptas, ipsam tempora doloribus perferendis, fuga sunt numquam ipsum, perspiciatis placeat. Obcaecati, numquam voluptas! A, amet praesentium!</p>
+			<footer>
+				<a class="btn" data-modal="close">Close modal window</a>
+			</footer>
+		</div>
+		<div id="m2" class="modal">
+			<p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt beatae voluptatem facere, voluptate voluptas, ipsam tempora doloribus perferendis, fuga sunt numquam ipsum, perspiciatis placeat. Obcaecati, numquam voluptas! A, amet praesentium!</p>
+			<footer>
+				<a class="btn" data-modal="close">Close modal window</a>
+			</footer>
+		</div>
+	</div>
+
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

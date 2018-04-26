@@ -1,0 +1,93 @@
+// "out": "../css/style.css"
+
+@import "default.less";
+
+.btn {
+	padding: 12px 25px;
+	display: inline-block;
+	background: @primary;
+	color: #fff;
+	cursor: pointer;
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+.tab-container {
+	margin-top: 50px;
+
+	.tab-list {
+		overflow: auto;
+
+		.tab {
+			cursor: pointer;
+			float: left;
+			padding: 10px 15px;
+			display: inline-block;
+			border: 1px solid transparent;
+			border-bottom-color: #ccc;
+
+			&.active {
+				border-color: #ccc;
+				border-bottom-color: transparent;
+			}
+		}
+	}
+	.tab-content {
+		position: relative;
+		margin-top: 10px;
+
+		.content {
+			transition: all 0.2s ease-out;
+			top: 0;
+			left: 0;
+			right: 0;
+			position: absolute;
+			line-height: 170%;
+			opacity: 0;
+			visibility: hidden;
+
+			&.active {
+				position: static;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+.modal-container {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.2s linaer;
+
+	&.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	.modal {
+		position: absolute;
+		top: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: block;
+		background: #fff;
+		max-width: 600px;
+		padding: 30px;
+		border-radius: 2px;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease-out;
+
+		&.active {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+@import "adaptive.less";

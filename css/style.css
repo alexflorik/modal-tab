@@ -1,0 +1,112 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tahoma";
+  font-weight: 400;
+}
+body {
+  padding: 30px;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+span,
+div,
+input,
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  text-decoration: none;
+  list-style: none;
+  color: #222;
+  font-family: "Tahoma";
+  font-weight: 400;
+}
+.btn {
+  padding: 12px 25px;
+  display: inline-block;
+  background: #16a085;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.tab-container {
+  margin-top: 50px;
+}
+.tab-container .tab-list {
+  overflow: auto;
+}
+.tab-container .tab-list .tab {
+  cursor: pointer;
+  float: left;
+  padding: 10px 15px;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-bottom-color: #ccc;
+}
+.tab-container .tab-list .tab.active {
+  border-color: #ccc;
+  border-bottom-color: transparent;
+}
+.tab-container .tab-content {
+  position: relative;
+  margin-top: 10px;
+}
+.tab-container .tab-content .content {
+  transition: all 0.2s ease-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  line-height: 170%;
+  opacity: 0;
+  visibility: hidden;
+}
+.tab-container .tab-content .content.active {
+  position: static;
+  opacity: 1;
+  visibility: visible;
+}
+.modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s linaer;
+}
+.modal-container.active {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-container .modal {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  background: #fff;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 2px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+}
+.modal-container .modal.active {
+  opacity: 1;
+  visibility: visible;
+}
